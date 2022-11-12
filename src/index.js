@@ -12,8 +12,6 @@ loggers.add('discord-bot', {
 
 const logger = loggers.get("discord-bot")
 
-logger.info(config);
-
 /** Logger Declare END */
 
 /** Express REST API START */

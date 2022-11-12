@@ -4,7 +4,7 @@ const logger = loggers.get("discord-bot")
 const { Client, Events, GatewayIntentBits } = require('discord.js');
 
 // Create a new client instance
-const bot = new Client({ intents: [GatewayIntentBits.Guilds] });
+const bot = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers] });
 
 // When the client is ready, run this code (only once)
 // We use 'c' for the event parameter to keep it separate from the already defined 'client'
